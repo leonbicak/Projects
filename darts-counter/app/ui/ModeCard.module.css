@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111111;
+  text-decoration: none;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.card:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #fafafa;
+  }
+  .card:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
