@@ -1,0 +1,39 @@
+.pad {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  padding: 24px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.BoardNum {
+  min-height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  background: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111111;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.BoardNum:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.BoardNum:active {
+  transform: scale(0.95);
+}
+
+@media (prefers-color-scheme: dark) {
+  .BoardNum {
+    background: #18181b;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #fafafa;
+  }
+  .BoardNum:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
